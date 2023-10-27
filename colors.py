@@ -9,6 +9,7 @@ GRAY=(100,100,100)
 GREEN=(0,255,0)
 BLUE=(0,0,255)
 YELLOW=(250,250,0)
+PINK=(199,21,133)
 backround=('white')
 
 running=True
@@ -29,6 +30,9 @@ while running:
             elif event.key==pygame.K_y:
                 backround=YELLOW
                 colors=YELLOW
+            elif event.key==pygame.K_p:
+                backround=PINK
+                colors=PINK
     pygame.display.set_caption(f'Az ablak háttérszínének RGB értéke: {colors}')
     pygame.display.update()
     screen.fill(backround)
